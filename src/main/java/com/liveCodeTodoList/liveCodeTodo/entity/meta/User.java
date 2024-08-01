@@ -47,7 +47,7 @@ public class User implements UserDetails {
     @JsonIgnore
     private List<Token> tokens;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
     @JsonIgnore
     private List<Todo> todos;
 

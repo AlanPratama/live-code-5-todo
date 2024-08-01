@@ -46,7 +46,7 @@ public class Todo {
 
 
     // ======== RELATIONAL =============
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     @JsonIgnore
     private User user;
 }
